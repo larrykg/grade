@@ -2,6 +2,7 @@
   <div id="app">
     <main-tab></main-tab>
     <router-view/>
+
   </div>
 </template>
 
