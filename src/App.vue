@@ -1,8 +1,7 @@
 <template>
   <div id="app">
-    <main-tab></main-tab>
+    <main-tab/>
     <router-view/>
-
   </div>
 </template>
 
@@ -14,9 +13,7 @@ export default {
   name: 'App',
   components: {
     MainTab
-  },
-
-
+  }
 }
 </script>
 
