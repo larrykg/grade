@@ -1,24 +1,19 @@
 <template>
   <div id="app">
-    <main-tab/>
-    <router-view/>
-    <back-top/>
+    <all-view/>
   </div>
 </template>
 
 <script>
-
-import MainTab from "components/content/MainTab";
-import BackTop from "components/content/BackTop";
-export default {
-  name: 'App',
-  components: {
-    MainTab,
-    BackTop
+  import AllView from "components/content/AllView";
+  export default {
+    name: 'App',
+    components: {
+      AllView
+    }
   }
-}
 </script>
 
 <style>
-@import "assets/css/base.css";
+    @import "assets/css/base.css";
 </style>
