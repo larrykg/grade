@@ -24,7 +24,10 @@
         console.log(res);
         const img = res.data.image;
         for (let i = 0; i < img.length; i++) {
-          this.imgArr.push(img[i].url)
+          if(img[i].image_type==1){
+            this.imgArr.push(img[i].url)
+          }
+
         }
 
       });

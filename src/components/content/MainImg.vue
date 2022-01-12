@@ -1,6 +1,6 @@
 <template>
   <div class="logo-img">
-    <img src="~assets/img/logo.jpg" alt="">
+    <img  :src="getLogoImg" alt="">
   </div>
 </template>
 
@@ -12,6 +12,11 @@
         type: String,
         default: ''
       }
+    },
+    computed:{
+      getLogoImg(){
+        return this.$store.state.logoImg
+      }
     }
   }
 </script>
@@ -19,6 +24,11 @@
 <style scoped>
     .logo-img {
         text-align: center;
-        background-color: #402e4c;
+        background-color: #fffef9;
+
+    }
+    .logo-img img{
+        width: 200px;
+        height: 50px;
     }
 </style>

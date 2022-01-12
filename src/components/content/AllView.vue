@@ -26,13 +26,24 @@
       getHomeData().then(res => {
         console.log(res);
         this.tagObj = res.data.tag;
-        this.addRatingTag(res.data.tag)
+        this.addRatingTag(res.data.tag);
+        const imgArr = res.data.image;
+        let logoUrl = '';
+        for (let i = 0, l = imgArr.length; i < l; i++) {
+          if (imgArr[i].image_type == 2) {
+            logoUrl = imgArr[i].url
+          }
+        }
+        this.addLogoImg(logoUrl)
       });
 
     },
-    methods:{
-      addRatingTag(payLoad){
-        this.$store.commit('addTag',payLoad)
+    methods: {
+      addRatingTag(payLoad) {
+        this.$store.commit('addTag', payLoad)
+      },
+      addLogoImg(payLoad) {
+        this.$store.commit('addLogoImg', payLoad)
       }
     }
   }
