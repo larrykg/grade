@@ -9,6 +9,7 @@
   </main-view>
 </template>
 
+
 <script>
   import MainView from "components/content/MainView";
 

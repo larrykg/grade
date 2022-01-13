@@ -6,6 +6,7 @@
 
 <script>
   import AllView from "components/content/AllView";
+
   export default {
     name: 'App',
     components: {
@@ -15,5 +16,5 @@
 </script>
 
 <style>
-    @import "assets/css/base.css";
+  @import "assets/css/base.css";
 </style>
