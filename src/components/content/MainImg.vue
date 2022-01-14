@@ -1,6 +1,6 @@
 <template>
   <div class="logo-img">
-    <img  :src="getLogoImg" alt="">
+    <img :src="getLogoImg" alt="">
   </div>
 </template>
 
@@ -13,8 +13,8 @@
         default: ''
       }
     },
-    computed:{
-      getLogoImg(){
+    computed: {
+      getLogoImg() {
         return this.$store.state.logoImg
       }
     }
@@ -22,13 +22,16 @@
 </script>
 
 <style scoped>
-    .logo-img {
-        text-align: center;
-        background-color: #fffef9;
+  .logo-img {
+    text-align: left;
+    background-color: #fffef9;
 
-    }
-    .logo-img img{
-        width: 200px;
-        height: 50px;
-    }
+  }
+
+  .logo-img img {
+    width: 200px;
+    height: 50px;
+    position: relative;
+    left: 20%;
+  }
 </style>
